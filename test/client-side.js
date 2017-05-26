@@ -1,6 +1,7 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var assert = require('assert');
-var validator = require('../validator');
-var min = require('../validator.min');
+var validator = require('validator/validator');
+var min = require('validator/validator.min');
 
 describe('Minified version', function () {
   it('should export the same things as the server-side version', function () {
@@ -25,3 +26,5 @@ describe('Minified version', function () {
     assert.equal(min.toBoolean('1'), true);
   });
 });
+
+return module.exports;});

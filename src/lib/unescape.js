@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 export default function unescape(str) {
@@ -10,3 +11,5 @@ export default function unescape(str) {
         .replace(/&#x2F;/g, '/')
         .replace(/&#96;/g, '`'));
 }
+
+return module.exports;});

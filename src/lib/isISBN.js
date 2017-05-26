@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const isbn10Maybe = /^(?:[0-9]{9}X|[0-9]{10})$/;
@@ -41,3 +42,5 @@ export default function isISBN(str, version = '') {
   }
   return false;
 }
+
+return module.exports;});

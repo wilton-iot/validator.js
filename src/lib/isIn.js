@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 import toString from './util/toString';
 
@@ -19,3 +20,5 @@ export default function isIn(str, options) {
   }
   return false;
 }
+
+return module.exports;});

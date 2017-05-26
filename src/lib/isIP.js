@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const ipv4Maybe = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
@@ -63,3 +64,5 @@ export default function isIP(str, version = '') {
   }
   return false;
 }
+
+return module.exports;});

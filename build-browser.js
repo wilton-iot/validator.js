@@ -1,4 +1,5 @@
-const pkg = require('./package.json');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+const pkg = require('validator/package.json');
 const fs = require('fs');
 const rollup = require('rollup').rollup;
 const babel = require('rollup-plugin-babel');
@@ -26,3 +27,5 @@ rollup({
   process.stderr.write(e.message + '\n');
   process.exit(1);
 });
+
+return module.exports;});

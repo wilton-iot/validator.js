@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 import merge from './util/merge';
@@ -71,3 +72,5 @@ export default function isEmail(str, options) {
 
   return true;
 }
+
+return module.exports;});

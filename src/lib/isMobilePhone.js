@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 /* eslint-disable max-len */
@@ -55,3 +56,5 @@ export default function isMobilePhone(str, locale) {
   }
   return false;
 }
+
+return module.exports;});

@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 /* eslint-disable prefer-rest-params */
@@ -16,3 +17,5 @@ export default function isLength(str, options) {
   const len = str.length - surrogatePairs.length;
   return len >= min && (typeof max === 'undefined' || len <= max);
 }
+
+return module.exports;});

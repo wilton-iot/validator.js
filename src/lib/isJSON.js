@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 export default function isJSON(str) {
@@ -8,3 +9,5 @@ export default function isJSON(str) {
   } catch (e) { /* ignore */ }
   return false;
 }
+
+return module.exports;});

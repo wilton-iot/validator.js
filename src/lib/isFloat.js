@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const float = /^(?:[-+])?(?:[0-9]+)?(?:\.[0-9]*)?(?:[eE][\+\-]?(?:[0-9]+))?$/;
@@ -14,3 +15,5 @@ export default function isFloat(str, options) {
     (!options.hasOwnProperty('lt') || str < options.lt) &&
     (!options.hasOwnProperty('gt') || str > options.gt);
 }
+
+return module.exports;});

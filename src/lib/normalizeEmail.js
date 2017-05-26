@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import isEmail from './isEmail';
 import merge from './util/merge';
 
@@ -216,3 +217,5 @@ export default function normalizeEmail(email, options) {
   }
   return parts.join('@');
 }
+
+return module.exports;});

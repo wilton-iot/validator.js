@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import merge from './util/merge';
 import assertString from './util/assertString';
 
@@ -78,3 +79,5 @@ export default function isCurrency(str, options) {
   options = merge(options, default_currency_options);
   return currencyRegex(options).test(str);
 }
+
+return module.exports;});

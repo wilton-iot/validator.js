@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 /*!
  * Copyright (c) 2016 Chris O'Hara <cohara87@gmail.com>
  * 
@@ -1387,3 +1388,5 @@
       return validator;
 
 }));
+
+return module.exports;});

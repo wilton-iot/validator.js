@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const notBase64 = /[^A-Z0-9+\/=]/i;
@@ -13,3 +14,5 @@ export default function isBase64(str) {
     firstPaddingChar === len - 1 ||
     (firstPaddingChar === len - 2 && str[len - 1] === '=');
 }
+
+return module.exports;});

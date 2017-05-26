@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 export default function isWhitelisted(str, chars) {
@@ -9,3 +10,5 @@ export default function isWhitelisted(str, chars) {
   }
   return true;
 }
+
+return module.exports;});

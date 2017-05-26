@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 export default function toString(input) {
   if (typeof input === 'object' && input !== null) {
     if (typeof input.toString === 'function') {
@@ -10,3 +11,5 @@ export default function toString(input) {
   }
   return String(input);
 }
+
+return module.exports;});

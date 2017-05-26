@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const issn = '^\\d{4}-?\\d{3}[\\dX]$';
@@ -20,3 +21,5 @@ export default function isISSN(str, options = {}) {
   }
   return checksum % 11 === 0;
 }
+
+return module.exports;});

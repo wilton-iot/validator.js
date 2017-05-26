@@ -1,4 +1,5 @@
-var validator = require('../index');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var validator = require('validator/index');
 var format = require('util').format;
 
 function test(options) {
@@ -8,7 +9,7 @@ function test(options) {
 
   Object.keys(options.expect).forEach(function (input) {
     args[0] = input;
-    var result = validator[options.sanitizer](...args);
+    var result = validator[options.sanitizer].apply(null, args);
     var expected = options.expect[input];
     if (isNaN(result) && !result.length && isNaN(expected)) {
       return;
@@ -411,3 +412,5 @@ describe('Sanitizers', function () {
     });
   });
 });
+
+return module.exports;});

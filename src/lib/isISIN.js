@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 import assertString from './util/assertString';
 
 const isin = /^[A-Z]{2}[0-9A-Z]{9}[0-9]$/;
@@ -33,3 +34,5 @@ export default function isISIN(str) {
 
   return parseInt(str.substr(str.length - 1), 10) === (10000 - sum) % 10;
 }
+
+return module.exports;});
