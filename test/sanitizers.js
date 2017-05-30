@@ -1,4 +1,6 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var describe = require("tape-compat").describe;
+var it = require("tape-compat").it;
 var validator = require('validator/index');
 var format = require('util').format;
 
