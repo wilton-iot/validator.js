@@ -68,7 +68,9 @@
       "test",
       "bower.json",
       "build-browser.js",
+      "index.js",
       "jsconfig.json",
+      "validator.js",
       "yarn.lock"
     ]
   }
