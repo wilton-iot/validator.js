@@ -61,5 +61,15 @@
   "engines": {
     "node": ">= 0.10"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "src",
+      "test",
+      "bower.json",
+      "build-browser.js",
+      "jsconfig.json",
+      "yarn.lock"
+    ]
+  }
 }
