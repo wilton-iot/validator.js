@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 const pkg = require('validator/package.json');
 const fs = require('fs');
 const rollup = require('rollup').rollup;
@@ -28,4 +28,4 @@ rollup({
   process.exit(1);
 });
 
-return module.exports;});
+require = requireOrig;});

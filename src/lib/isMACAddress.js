@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 const macAddress = /^([0-9a-fA-F][0-9a-fA-F]:){5}([0-9a-fA-F][0-9a-fA-F])$/;
@@ -8,4 +8,4 @@ export default function isMACAddress(str) {
   return macAddress.test(str);
 }
 
-return module.exports;});
+require = requireOrig;});

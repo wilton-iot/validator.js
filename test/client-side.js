@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var assert = require('assert');
 var validator = require('validator/validator');
 var min = require('validator/validator.min');
@@ -27,4 +27,4 @@ describe('Minified version', function () {
   });
 });
 
-return module.exports;});
+require = requireOrig;});

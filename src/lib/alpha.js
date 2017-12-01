@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 export const alpha = {
   'en-US': /^[A-Z]+$/i,
   'cs-CZ': /^[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]+$/i,
@@ -60,4 +60,4 @@ for (let locale, i = 0; i < arabicLocales.length; i++) {
   alphanumeric[locale] = alphanumeric.ar;
 }
 
-return module.exports;});
+require = requireOrig;});

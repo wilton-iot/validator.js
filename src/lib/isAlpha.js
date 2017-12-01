@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 import { alpha } from './alpha';
 
@@ -10,4 +10,4 @@ export default function isAlpha(str, locale = 'en-US') {
   throw new Error(`Invalid locale '${locale}'`);
 }
 
-return module.exports;});
+require = requireOrig;});

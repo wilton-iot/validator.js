@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 const int = /^(?:[-+]?(?:0|[1-9][0-9]*))$/;
@@ -24,4 +24,4 @@ export default function isInt(str, options) {
   return regex.test(str) && minCheckPassed && maxCheckPassed && ltCheckPassed && gtCheckPassed;
 }
 
-return module.exports;});
+require = requireOrig;});

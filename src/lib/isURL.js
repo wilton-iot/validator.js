@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 import isFQDN from './isFQDN';
@@ -116,4 +116,4 @@ export default function isURL(url, options) {
   return true;
 }
 
-return module.exports;});
+require = requireOrig;});

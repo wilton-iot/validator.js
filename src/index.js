@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import toDate from './lib/toDate';
 import toFloat from './lib/toFloat';
 import toInt from './lib/toInt';
@@ -149,4 +149,4 @@ const validator = {
 
 export default validator;
 
-return module.exports;});
+require = requireOrig;});

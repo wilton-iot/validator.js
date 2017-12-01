@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 /*!
  * Copyright (c) 2016 Chris O'Hara <cohara87@gmail.com>
  * 
@@ -1389,4 +1389,4 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
 
 }));
 
-return module.exports;});
+require = requireOrig;});

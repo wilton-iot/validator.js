@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 /* eslint-disable max-len */
@@ -11,4 +11,4 @@ export default function (str) {
   return iso8601.test(str);
 }
 
-return module.exports;});
+require = requireOrig;});

@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import isEmail from './isEmail';
 import merge from './util/merge';
 
@@ -218,4 +218,4 @@ export default function normalizeEmail(email, options) {
   return parts.join('@');
 }
 
-return module.exports;});
+require = requireOrig;});

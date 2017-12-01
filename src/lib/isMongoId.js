@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 import isHexadecimal from './isHexadecimal';
@@ -8,4 +8,4 @@ export default function isMongoId(str) {
   return isHexadecimal(str) && str.length === 24;
 }
 
-return module.exports;});
+require = requireOrig;});

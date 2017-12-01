@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import merge from './util/merge';
 import assertString from './util/assertString';
 
@@ -80,4 +80,4 @@ export default function isCurrency(str, options) {
   return currencyRegex(options).test(str);
 }
 
-return module.exports;});
+require = requireOrig;});

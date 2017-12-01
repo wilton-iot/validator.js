@@ -5,7 +5,7 @@
  */
 
 define(["validator/lib/isAlphanumeric", "assert"], function(isAlphanumeric, assert) {   
-    console.log("test: validator sanity");
+    print("test: validator sanity");
     assert(isAlphanumeric("foo42"));
     assert(!isAlphanumeric("foo42$"));
     

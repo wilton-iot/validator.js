@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -316,4 +316,4 @@ var validator = {
 exports.default = validator;
 module.exports = exports['default'];
 
-return module.exports;});
+require = requireOrig;});

@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 import assertString from './util/assertString';
 
 export default function isBoolean(str) {
@@ -6,4 +6,4 @@ export default function isBoolean(str) {
   return (['true', 'false', '1', '0'].indexOf(str) >= 0);
 }
 
-return module.exports;});
+require = requireOrig;});
