@@ -70,7 +70,8 @@
       "build-browser.js",
       "jsconfig.json",
       "validator.js",
-      "yarn.lock"
+      "yarn.lock",
+      "test.js"
     ]
   }
 }

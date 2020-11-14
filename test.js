@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 
-define(["validator/lib/isAlphanumeric", "assert"], function(isAlphanumeric, assert) {   
-    print("test: validator sanity");
+define([
+    "assert",
+    "./lib/isAlphanumeric",
+    "./test/sanitizers"
+], function(assert, isAlphanumeric) {
+    "use strict";
+
     assert(isAlphanumeric("foo42"));
     assert(!isAlphanumeric("foo42$"));
-    
-    return {
-        main: function() {
-        }
-    };
+
+    print("test: validator");
 });
